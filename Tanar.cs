@@ -19,21 +19,71 @@ namespace Karesz
 		{
 			Robot karesz = new Robot("Karesz", 1000, 1000, 1000, 1000, 0, r.Next(1,39), r.Next(1,29), r.Next(4), false, false);
 			Betölt(betöltendő_pálya);
-			Vektor[] kijáratok = new Vektor[]
+
+			Vektor kijárat;
+			switch (r.Next(4))
 			{
-				new Vektor(0, 1),
-				new Vektor(1, 0),
-				new Vektor(39, 0),
-				new Vektor(40, 1),
-				new Vektor(1, 30),
-				new Vektor(0, 29),
-				new Vektor(39, 30),
-				new Vektor(40, 29),
-			};
-			Vektor kijárat = kijáratok[r.Next(8)];
+				case 0:
+					kijárat = new Vektor(r.Next(1, 39), 0);
+					break;
+				case 1:
+					kijárat = new Vektor(r.Next(1, 39), 30);
+					break;
+				case 3:
+					kijárat = new Vektor(0, r.Next(1, 29));
+					break;
+				default:
+					kijárat = new Vektor(40, r.Next(1, 29));
+					break;
+			}
 			pálya[kijárat] = 0;
 			Frissít();
 
+			//Mondd(kijárat.ToString());
+			//Mondd(pálya[kijárat].ToString());
+
+			//Robot lilesz = new Robot("Lilesz", 1000, 1000, 1000, 1000, 0, 10, 22, 0);
+			//lilesz.Feladat = delegate()
+			//{
+			//lilesz.Lépj();
+			//    lilesz.Lépj();
+			//};
+			//Mondd(kijárat.ToString());
+			//Mondd(pálya[kijárat].ToString());
+
+			//Robot lilesz = new Robot("Lilesz", 1000, 1000, 1000, 1000, 0, 10, 22, 0);
+			//lilesz.Feladat = delegate()
+			//{
+			//lilesz.Lépj();
+			//    lilesz.Lépj();
+			//};
+			//Mondd(kijárat.ToString());
+			//Mondd(pálya[kijárat].ToString());
+
+			//Robot lilesz = new Robot("Lilesz", 1000, 1000, 1000, 1000, 0, 10, 22, 0);
+			//lilesz.Feladat = delegate()
+			//{
+			//lilesz.Lépj();
+			//    lilesz.Lépj();
+			//};
+			//Mondd(kijárat.ToString());
+			//Mondd(pálya[kijárat].ToString());
+
+			//Robot lilesz = new Robot("Lilesz", 1000, 1000, 1000, 1000, 0, 10, 22, 0);
+			//lilesz.Feladat = delegate()
+			//{
+			//lilesz.Lépj();
+			//    lilesz.Lépj();
+			//};
+			//Mondd(kijárat.ToString());
+			//Mondd(pálya[kijárat].ToString());
+
+			//Robot lilesz = new Robot("Lilesz", 1000, 1000, 1000, 1000, 0, 10, 22, 0);
+			//lilesz.Feladat = delegate()
+			//{
+			//lilesz.Lépj();
+			//    lilesz.Lépj();
+			//};
 		}
 	}
 }
