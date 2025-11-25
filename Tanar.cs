@@ -34,15 +34,6 @@ namespace Karesz
 			pálya[kijárat] = 0;
 			Frissít();
 
-			//Mondd(kijárat.ToString());
-			//Mondd(pálya[kijárat].ToString());
-
-			//Robot lilesz = new Robot("Lilesz", 1000, 1000, 1000, 1000, 0, 10, 22, 0);
-			//lilesz.Feladat = delegate()
-			//{
-			//lilesz.Lépj();
-			//    lilesz.Lépj();
-			//};
 		}
 	}
 }
