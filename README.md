@@ -1,9 +1,8 @@
-# Karesz kijut I.
+# Karesz kijut II.
 Karesz álljon ki a pálya szélére és szívjon egy kis friss levegőt! Ha elér a pálya szélére, 
 akkor mondjon valamit, ami tartalmazza azt a stringet, hogy "Milyen szép a kilátás!"
 
-A pálya széle véletlenszerűen van elhelyezve a pálya oldalain, ami bárhol lehet úgy, 
-hogy Karesz még pont kiférjen rajta.
+A pálya széle véletlenszerűen van elhelyezve a pálya sarkaiban úgy, hogy Karesz még pont kiférjen.
 Karesz kezdeti pozíciója és iránya is véletlenszerű. 
 
 Ebben a feladatban **nem lehet ultrahang szenzorokat használni!**
